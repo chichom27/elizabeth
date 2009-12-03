@@ -1,0 +1,58 @@
+<p>
+  <b>Org:</b>
+  <%=h @location.org_id %>
+</p>
+
+<p>
+  <b>Pic:</b>
+  <%=h @location.pic_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @location.name %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%=h @location.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%=h @location.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @location.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @location.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @location.zip %>
+</p>
+
+<p>
+  <b>X-co:</b>
+  <%=h @location.x_co %>
+</p>
+
+<p>
+  <b>Y-co:</b>
+  <%=h @location.y_co %>
+</p>
+
+<p>
+  <b>Is active:</b>
+  <%=h @location.is_active %>
+</p>
+
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>

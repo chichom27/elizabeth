@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/team09_f09/!svn/ver/71/trunk/app/views/users
+END
+_new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/team09_f09/!svn/ver/41/trunk/app/views/users/_new.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/team09_f09/!svn/ver/71/trunk/app/views/users/new.html.erb
+END
+_user_bar.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/team09_f09/!svn/ver/38/trunk/app/views/users/_user_bar.html.erb
+END

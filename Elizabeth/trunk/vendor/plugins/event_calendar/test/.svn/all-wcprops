@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/test/test_helper.rb
+END
+event_calendar_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/test/event_calendar_test.rb
+END

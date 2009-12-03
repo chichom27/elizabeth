@@ -1,0 +1,28 @@
+<p>
+  <b>Org:</b>
+  <%=h @picture.org_id %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%=h @picture.event_id %>
+</p>
+
+<p>
+  <b>Picture path:</b>
+  <%=h @picture.picture_path %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @picture.description %>
+</p>
+
+<p>
+  <b>Is active:</b>
+  <%=h @picture.is_active %>
+</p>
+
+
+<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path %>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/team09_f09/!svn/ver/61/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates
+END
+stylesheet.css
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/team09_f09/!svn/ver/61/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/stylesheet.css
+END
+javascript.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/javascript.js
+END
+migration.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/migration.rb.erb
+END
+view.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/view.html.erb
+END
+85_bg.gif
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/85_bg.gif
+END
+helper.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/helper.rb.erb
+END
+model.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/model.rb.erb
+END
+controller.rb.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/controller.rb.erb
+END
+120_bg.gif
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/generators/event_calendar/templates/120_bg.gif
+END

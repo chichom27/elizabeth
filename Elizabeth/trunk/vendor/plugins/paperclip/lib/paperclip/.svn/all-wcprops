@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip
+END
+callback_compatability.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/callback_compatability.rb
+END
+processor.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/processor.rb
+END
+iostream.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/iostream.rb
+END
+thumbnail.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/thumbnail.rb
+END
+storage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/storage.rb
+END
+upfile.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/upfile.rb
+END
+matchers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/matchers.rb
+END
+attachment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/attachment.rb
+END
+interpolations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/interpolations.rb
+END
+geometry.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/team09_f09/!svn/ver/62/trunk/vendor/plugins/paperclip/lib/paperclip/geometry.rb
+END

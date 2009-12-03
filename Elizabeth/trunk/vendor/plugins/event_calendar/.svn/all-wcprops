@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/team09_f09/!svn/ver/61/trunk/vendor/plugins/event_calendar
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/init.rb
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/install.rb
+END
+MIT-LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/MIT-LICENSE
+END
+uninstall.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/uninstall.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/team09_f09/!svn/ver/32/trunk/vendor/plugins/event_calendar/README
+END

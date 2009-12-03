@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/team09_f09/!svn/ver/36/trunk/app/views/user_mailer
+END
+signup_notification.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/team09_f09/!svn/ver/36/trunk/app/views/user_mailer/signup_notification.erb
+END
+activation.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/team09_f09/!svn/ver/36/trunk/app/views/user_mailer/activation.erb
+END

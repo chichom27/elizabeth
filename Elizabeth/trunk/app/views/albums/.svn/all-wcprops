@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/team09_f09/!svn/ver/67/trunk/app/views/albums
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/team09_f09/!svn/ver/66/trunk/app/views/albums/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/team09_f09/!svn/ver/62/trunk/app/views/albums/index.html.erb
+END
+_photo.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/team09_f09/!svn/ver/64/trunk/app/views/albums/_photo.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/team09_f09/!svn/ver/62/trunk/app/views/albums/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/team09_f09/!svn/ver/67/trunk/app/views/albums/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/team09_f09/!svn/ver/64/trunk/app/views/albums/_form.html.erb
+END

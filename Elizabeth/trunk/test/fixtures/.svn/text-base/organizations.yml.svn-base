@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  location_id: 1
+  website: MyString
+  category_id: 1
+  is_pending: false
+  email: MyString
+  phone: MyString
+  cellphone: MyString
+  fax: MyString
+  username: MyString
+  password: MyString
+  user_type: MyString
+  is_active: false
+
+two:
+  name: MyString
+  description: MyText
+  location_id: 1
+  website: MyString
+  category_id: 1
+  is_pending: false
+  email: MyString
+  phone: MyString
+  cellphone: MyString
+  fax: MyString
+  username: MyString
+  password: MyString
+  user_type: MyString
+  is_active: false

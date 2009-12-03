@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/team09_f09/!svn/ver/36/trunk/config/environments
+END
+test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/team09_f09/!svn/ver/21/trunk/config/environments/test.rb
+END
+development.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/team09_f09/!svn/ver/36/trunk/config/environments/development.rb
+END
+production.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/team09_f09/!svn/ver/21/trunk/config/environments/production.rb
+END

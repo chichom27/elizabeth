@@ -1,0 +1,22 @@
+<h1>Community Directory</h1>
+<hr>
+
+
+
+<table>
+ <p></p>
+<% @organizations.each do |organization| %>
+  <tr>
+    <td><%= link_to organization.name, organization %></td>
+    
+    <% if false #if is moderator%>
+    <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+    <td><%= link_to 'Destroy', organization, :confirm => 'Are you sure?', :method => :delete %></td>
+	<% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= button_to 'New organization', new_organization_path %>

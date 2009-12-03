@@ -1,0 +1,26 @@
+<%=h @events.length %> Upcoming Events 
+
+<% i = 0 %>
+
+<% @events.each do |event| %>
+ <hr>
+  <table>
+    <tr><td><%= link_to event.name, event_path(event) %></td>
+	<%unless current_user.nil? %>
+	<% if current_user.has_role?('owner', event)%>
+	<td><%= link_to(image_tag("/images/edit_dg.gif", :border => 0), edit_event_path(event)  )  %></td>
+	<% end %>
+	<% end %>
+	</tr>
+    <tr><td><%=h event.location.name %></td></tr>
+	<tr><td><p><%=h event.start_at.strftime("%A, %b %d @ %I:%M") %></p></td></tr>
+
+  </table>
+<% i=i+1 %>
+<% if i >3 %>
+<% break %>
+<% end %>
+
+
+
+<% end %>

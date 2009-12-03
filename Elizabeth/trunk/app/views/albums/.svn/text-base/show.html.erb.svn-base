@@ -1,0 +1,55 @@
+<div id="leftColumn">
+<p>
+  <h1>
+	
+  <%=h @album.name %>
+  </h1>
+  </hr>
+</p>
+ 
+<% if @album.photos.count == 0 %>
+There are currently no Photos in this Album
+<% end %> 
+
+<br>
+
+<% form_for @album, :html => { :multipart => true } do |f| %>
+
+	<% counter = 0 %>
+	<% for photo in @photos %>
+
+	  <% if counter == 4 %>
+	    <br>
+		<% counter = 0 %>
+	  <% end %>
+
+	    <%= link_to ( image_tag(photo.data.url(:thumb), :alt => ''), photo) %>
+	<%unless current_user.nil? %> 
+	    <%= check_box_tag "photo_ids[]", photo.id %> &nbsp &nbsp
+	<% else %>
+	&nbsp &nbsp&nbsp &nbsp
+	<% end  %>
+	  
+	
+	  <% counter = counter + 1 %>
+	<% end %>
+	
+	<%unless current_user.nil? %>
+	<p>Press Remove to delete checked pictures from album</p>
+	<p>
+		<%= f.submit "Remove", :confirm => 'Are you sure?', :method => :delete %>
+	</p>
+	
+	<%= link_to 'Add New Photos', edit_album_path(@album) %>
+	<% end%>
+<% end %>
+
+<%= will_paginate @photos %>
+ <br>
+
+<%unless current_user.nil? %>
+<%= link_to 'Back to Organization', @organization %>
+<%else %>
+<%= link_to 'Back to Event', @event %>
+<%end %>
+</div>

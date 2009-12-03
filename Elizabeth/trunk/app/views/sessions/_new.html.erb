@@ -1,0 +1,47 @@
+
+
+<% if logged_in? %>
+
+  <%= label_tag 'Welcome' %>
+  <%=h current_user.name %>
+<%= link_to "Logout", :logout unless !logged_in? %>
+	<% if current_user.activated_at == nil%>
+		<br/>Please activated your account.
+	<%else%>
+		<% if current_user.has_role?('org')%>
+			<%if (current_user.org_id == 0) or (current_user.org_id == nil)  %>
+				<br/><%= link_to "Create your organization", :controller => 'organizations', :action => 'new' %>
+			<%else%>
+				<br/><%= link_to current_user.organization.name, organization_path(current_user.organization) %>
+			<%end%>
+		<% end %>
+	<% end %>
+
+
+<% else %>
+
+
+<%- form_tag session_path do -%>
+<table>
+	<tr><td>
+<%= label_tag 'login' %>
+
+<%= text_field_tag 'login', @login %></td>
+
+<tr><td>
+<%= label_tag 'password' %>
+<%= password_field_tag 'password', nil %> </td>
+<td><%= submit_tag 'Log in' %></td>
+
+</table> 
+<!-- Uncomment this if you want this functionality
+<p><%= label_tag 'remember_me', 'Remember me' %>
+<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+-->
+
+<% end -%>
+
+<% end -%>
+
+
+

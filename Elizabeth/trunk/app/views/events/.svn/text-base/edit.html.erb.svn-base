@@ -1,0 +1,43 @@
+<br/>
+<h1>Edit Event Details</h1>
+<hr>
+
+<% form_for(@event) do |f| %>
+  <%= f.error_messages %>
+
+  	<%= f.hidden_field :org_id %>
+	<%= f.hidden_field :priority %>
+	<%= f.hidden_field :is_multi_day %>
+	<%= f.hidden_field :is_active %>
+	
+  <p>
+    <%= f.label "Event Name: " %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Category: " %>
+    <%= f.collection_select(:category_id , Category.find(:all), :id , :name) %>
+  </p>
+  <p>
+    <%= f.label "Choose Location: " %>
+    <%= f.collection_select(:location_id , Location.find(:all), :id , :name) %>
+  </p>
+  <p>
+    <%= f.label :start_at %><br />
+    <%= f.datetime_select :start_at %>
+  </p>
+  <p>
+    <%= f.label :end_at %><br />
+    <%= f.datetime_select :end_at %>
+  </p>
+  <p>
+    <%= f.label "Description: " %><br />
+    <%= f.text_area :description, :size => "40x5" %>
+  </p>
+  <p>
+    <%= f.submit 'Save Changes' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @event %> |
+<%= link_to 'Back', events_path %>

@@ -1,0 +1,40 @@
+<% if !@event.is_active %>
+<p>
+  Event has been Canceled
+</p>
+<% end %>
+
+<h1><%=h @event.name %></h1>
+
+<p>
+  <b>Category:</b>
+  <%=h @event.category.name %>
+</p>
+
+<p>
+  <b>Host:</b>
+  <%=h @event.organization.name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @event.location.name %>
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  <%=h @event.description %>
+</p>
+
+
+
+<p>
+  <b>Date:</b>
+  <%=h @event.start_at.strftime("%A, %B %d, %Y") %>
+</p>
+<p>
+  <b>Time:</b>
+  <%=h @event.start_at.strftime("%I:%M") %>
+</p>

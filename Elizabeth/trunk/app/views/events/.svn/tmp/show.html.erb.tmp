@@ -1,0 +1,96 @@
+<div id="rightColumn">
+	
+	<h3>Photo Gallery</h3>
+	<hr>
+	<div id="photos">
+	  <% unless @album.nil? %>
+	  <%= render :partial => 'photo', :collection => @album.photos[0,2] %>
+	  <% end %>
+	</div>
+	<%= link_to 'View Entire Gallery', @event.album %>
+	</div>
+
+
+<div id="leftColumn">
+<% if !@event.is_active %>
+<p>
+  Event has been Canceled
+</p>
+<% end %>
+
+<h2><%=h @event.name %></h2>
+<hr>
+
+<p>
+  <b>Category:</b>
+  <%=h @event.category.name %>
+</p>
+
+<p>
+  <b>Host:</b>
+  <%= link_to( h(@event.organization.name), organization_path(@event.organization)) %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= link_to( h(@event.location.name), location_path(@event.location)) %>
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  <%=h @event.description %>
+</p>
+
+
+
+<p>
+  <b>Date:</b>
+  <%=h @event.start_at.strftime("%A, %B %d, %Y") %>
+</p>
+<p>
+  <b>Time:</b>
+  <%=h @event.start_at.strftime("%I:%M") %>
+</p>
+
+
+<!-- Should only show for moderator -->
+<p>
+  <b>Priority:</b>
+  <%=h @event.priority %>
+</p>
+
+<% if @event.is_multi_day %>
+<p>
+  <b>Is multi day:</b>
+  <%=h @event.is_multi_day %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%=h @event.end_at %>
+</p>
+
+<%end%>
+
+<% if current_user.has_role? ('owner', @event) %>
+<table> <tr>
+	
+<td><%= link_to 'Edit', edit_event_path(@event) %></td>
+ <td><%= link_to(image_tag("/images/edit_dg.gif", :border => 0), :action => 'edit', :id => @event )  %> </td>
+</tr></table>
+<%end%>
+
+</div>
+
+
+
+
+
+<%= render :partial => 'comments/new_event' %>
+<br/>
+<%= render :partial => 'comments/index' %>
+
+
+<%= link_to(image_tag("/images/back.png", :border => 0), '/events') %>

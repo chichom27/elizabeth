@@ -1,0 +1,28 @@
+<h1>Listing pictures</h1>
+
+<table>
+  <tr>
+    <th>Org</th>
+    <th>Event</th>
+    <th>Picture path</th>
+    <th>Description</th>
+    <th>Is active</th>
+  </tr>
+
+<% @pictures.each do |picture| %>
+  <tr>
+    <td><%=h picture.org_id %></td>
+    <td><%=h picture.event_id %></td>
+    <td><%=h picture.picture_path %></td>
+    <td><%=h picture.description %></td>
+    <td><%=h picture.is_active %></td>
+    <td><%= link_to 'Show', picture %></td>
+    <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
+    <td><%= link_to 'Destroy', picture, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New picture', new_picture_path %>

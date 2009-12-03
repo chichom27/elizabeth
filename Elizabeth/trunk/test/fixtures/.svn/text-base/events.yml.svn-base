@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  org_id: 1
+  name: MyString
+  description: MyString
+  location_id: 1
+  start_time: 2009-10-23 17:25:21
+  priority: 1
+  is_multi_day: false
+  end_time: 2009-10-23 17:25:21
+  category_id: 1
+  is_active: false
+
+two:
+  org_id: 1
+  name: MyString
+  description: MyString
+  location_id: 1
+  start_time: 2009-10-23 17:25:21
+  priority: 1
+  is_multi_day: false
+  end_time: 2009-10-23 17:25:21
+  category_id: 1
+  is_active: false

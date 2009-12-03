@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/team09_f09/!svn/ver/71/trunk/app/views/locations
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/team09_f09/!svn/ver/58/trunk/app/views/locations/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/team09_f09/!svn/ver/71/trunk/app/views/locations/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/team09_f09/!svn/ver/71/trunk/app/views/locations/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/team09_f09/!svn/ver/71/trunk/app/views/locations/show.html.erb
+END

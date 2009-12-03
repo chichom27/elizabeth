@@ -1,0 +1,71 @@
+<br/>
+<% if logged_in? %>
+	<%if (current_user.org_id == 0) or (current_user.org_id == nil)  %>
+		<h1>New Organization</h1>
+		<hr>
+		
+		<% form_for(@organization) do |f| %>
+		  <%= f.error_messages %>
+		  <p> 
+		    <%= f.hidden_field :username, :value => "test" %> <!-- Should remove when you remove from table -->
+			<%= f.hidden_field :password, :value => "test" %> <!-- Should remove when you remove from table -->
+			<%= f.hidden_field :is_active, :value => 1 %>
+			<%= f.hidden_field :is_pending, :value => 1 %>
+			<%= f.hidden_field :user_id, :value => current_user.id %>
+		  </p>
+		  <p> 
+		  	Type of Account: 
+		  <%= f.select(:user_type , ["Community Organization",  "Private Business", "Historical Contributor"]) %>
+		  </p>
+		  <p>
+		    <%= f.label "Organization Name: " %>
+		    <%= f.text_field :name %>
+		  </p>
+		  <p>
+		    <%= f.label :category_id %>: 
+		    <%= f.collection_select(:category_id , Category.find(:all), :id , :name) %>
+		  </p>
+		  <p>
+		    <%= f.label  "Description: " %><br />
+		    <%= f.text_area :description, :size => "40x5" %>
+		  </p>
+		  
+		  <p> 
+		    <h1>Contact Information</h1>
+		  </p>
+		  <p>
+		    Email Address: 
+		    <%= f.text_field :email %>
+		  </p>
+		  <p>
+		    <%= f.label "Phone: " %>
+		    <%= f.text_field :phone %>
+		  </p>
+		  <p>
+		    <%= f.label "Cellphone: " %>
+		    <%= f.text_field :cellphone %>
+		  </p>
+		  <p>
+		    <%= f.label "Fax: " %>
+		    <%= f.text_field :fax %>
+		  </p>
+		  <p>
+		    <%= f.label "Website: " %>
+		    <%= f.text_field :website %>
+		  </p>
+		  <p>
+		    <%= f.label "Address: " %>
+		    <%= f.text_field :location_id %>
+		  </p>
+		  <p>
+		    <%= f.submit 'Create' %>
+		  </p>
+		<% end %>
+		
+		<%= link_to 'Back', organizations_path %>
+	<% else %>
+		You are already managing one organization.
+	<% end %>
+<% else %>
+	Please Log In.
+<% end %>

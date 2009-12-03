@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/team09_f09/!svn/ver/72/trunk/app/views/organizations
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/team09_f09/!svn/ver/61/trunk/app/views/organizations/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/team09_f09/!svn/ver/71/trunk/app/views/organizations/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/team09_f09/!svn/ver/71/trunk/app/views/organizations/new.html.erb
+END
+_org_events.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/team09_f09/!svn/ver/68/trunk/app/views/organizations/_org_events.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/team09_f09/!svn/ver/72/trunk/app/views/organizations/show.html.erb
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/team09_f09/!svn/ver/36/trunk/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/team09_f09/!svn/ver/21/trunk/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/team09_f09/!svn/ver/21/trunk/config/initializers/session_store.rb
+END
+site_keys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/team09_f09/!svn/ver/36/trunk/config/initializers/site_keys.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/team09_f09/!svn/ver/21/trunk/config/initializers/backtrace_silencers.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/team09_f09/!svn/ver/21/trunk/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/team09_f09/!svn/ver/21/trunk/config/initializers/mime_types.rb
+END

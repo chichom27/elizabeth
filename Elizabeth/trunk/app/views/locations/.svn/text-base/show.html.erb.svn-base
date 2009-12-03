@@ -1,0 +1,39 @@
+<h2> <%=h @location.name %> </h2>
+
+<p>
+  <%#@location.pic_id %>
+</p>
+<% if logged_in? %>
+	<table>
+	  <tr><td>Address:</td><td><%=h @location.address1 %></td>
+	  	<td>
+	  		<% if current_user.has_role? ('owner', @location) %><%= link_to 'Edit', edit_location_path(@location) %><%end%>
+	  	</td>
+	  </tr>
+	  <tr><td></td><td><%=h @location.address2 %></td>
+	  	<td>
+	  		<% if current_user.has_role? ('owner', @location) %><%= link_to 'Delete', @location, :confirm => 'Are you sure?', :method => :delete %><%end%>
+	  	</td>
+	  </tr>
+	  <tr><td></td><td><%=h @location.city %>, <%=h @location.state %> <%=h @location.zip %></td></tr>
+	 </table> 
+
+	<%= link_to 'Locations Manager', locations_path %>
+
+<% else %>
+	<table>
+	  <tr><td>Address:</td><td><%=h @location.address1 %></td><td></td>
+	  </tr>
+	  <tr><td></td><td><%=h @location.address2 %></td><td></td>
+	  </tr>
+	  <tr><td></td><td><%=h @location.city %>, <%=h @location.state %> <%=h @location.zip %></td></tr>
+	 </table> 
+
+<% end %>
+
+<br/>
+<% if !((params[:event]) == nil) %>
+<%= link_to 'Back', :controller => 'events',
+							   :action => 'show',
+	 						   :id => params[:event] %>
+<%end%>

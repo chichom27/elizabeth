@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Historic Elizabeth</title>
+<link href="layout.css" rel="stylesheet" type="text/css" />
+
+<%= javascript_include_tag :defaults %>
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+//-->
+</script>
+<%= stylesheet_link_tag "home_layout" %>
+</head>
+
+<body class="oneColFixCtrHdr">
+
+  <div id="container">
+    <div id="header">
+      <div id="sitelogo"><img src="/images/logo.png" alt="Historic Elizabeth- A Community Portal" width="364" height="72" border="0" usemap="#Map" longdesc="http://www.historicelizabeth.com" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="1,2,362,70" href="/homes" target="_self" />
+          <area shape="rect" coords="147,30,151,40" href="#" />
+          <area shape="rect" coords="181,61,182,68" href="#" />
+          <area shape="rect" coords="359,66,417,102" href="#" alt="Historic Elizabeth - A Community Portal" />
+          <area shape="rect" coords="357,65,398,95" href="#" />
+        </map>
+      </div>
+      <div id="navbar">
+        <body bgcolor="#ffffff" onload="MM_preloadImages('/images/calendar_button_f2.png','/images/directory_button_f2.png','/images/archive_button_f2.png','/images/information_button_f2.png');">
+  <table border="0" cellpadding="0" cellspacing="0" width="756">
+  <!-- fwtable fwsrc="navbarfireworks.png" fwpage="Page 1" fwbase="navbarfireworks.png" fwstyle="Dreamweaver" fwdocid = "201638160" fwnested="0" -->
+   
+    
+    <tr>
+      <td><a href="/calendar" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('calendar_button','','/images/calendar_button_f2.png',1);"><img src="/images/calendar_button.png" alt="" name="calendar_button" width="120" height="46" border="0" id="calendar_button" /></a></td>
+      <td><a href="/organizations" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('directory_button','','/images/directory_button_f2.png',1);"><img name="directory_button" src="/images/directory_button.png" width="120" height="46" border="0" id="directory_button" alt="" /></a></td>
+      <td><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('archive_button','','/images/archive_button_f2.png',1);"><img name="archive_button" src="/images/archive_button.png" width="120" height="46" border="0" id="archive_button" alt="" /></a></td>
+      <td><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('information_button','','/images/information_button_f2.png',1);"><img name="information_button" src="/images/information_button.png" width="120" height="46" border="0" id="information_button" alt="" /></a></td>
+      <td>
+	<div id="userloginbox">
+		
+		<%= render :partial => 'sessions/new' %>
+		
+	</div>
+	</td>
+      
+      </tr>
+  </table>
+      </div>
+    <!-- end #header --></div>
+    <div id="mainContent">
+      <%= yield -%>
+  <!-- end #mainContent -->
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; 2009 Historic Elizabeth &ndash; All Rights Reserved. | Terms of Use | Contact Us</p>
+    <!-- end #footer --></div>
+	
+  <!-- end #container --></div>
+
+</body>
+</html>

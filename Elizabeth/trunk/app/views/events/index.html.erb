@@ -1,0 +1,61 @@
+<br/>
+<h1>Listing events</h1>
+<hr>
+
+
+<% if logged_in? %>
+	<table>
+	<% @events.each do |event| %>
+	  	  <% @owner = current_user.has_role? ('owner', event) %>
+		  <tr>
+		    <td>Who: <%= link_to event.organization.name, organization_path(event.organization) %></td>
+		  </tr>
+		  <tr>
+		    <td>What: <%= link_to event.name, event %></td>
+		  </tr>
+		  <tr>
+		    <td>Where: <%= link_to event.location.name, :controller => 'locations',
+							   :action => 'show',
+	 						   :id => event.location.id,
+							   :event => event.id  %></td>
+			<% if @owner%><td><%= link_to 'Update Event Profile', edit_event_path(event) %></td><% end %>
+		  </tr>
+		  <tr>
+		    <td>When: <%=h event.start_at.strftime("%A, %b %d @ %I:%M") %></td>
+			<% if @owner%><td><%= link_to 'Cancel Event', event, :confirm => 'Are you sure?', :method => :delete %></td><% end %>
+		  </tr>
+		  <tr><td><br/></td></tr>
+	  
+	<% end %>
+	</table>
+	<% if current_user.org_id == (params[:id]).to_i%>
+		<%= link_to 'New event', new_event_path %>
+	<% end %>
+<% else %>
+	<table>
+	<% @events.each do |event| %>
+	  <tr>
+	    <td>Who: <%= link_to event.organization.name, organization_path(event.organization) %></td>
+	  </tr>
+	  <tr>
+	    <td>What: <%= link_to event.name, event %></td>
+	  </tr>
+	  <tr>
+	    <td>Where: <%= link_to event.location.name, :controller => 'locations',
+							   :action => 'show',
+	 						   :id => event.location.id,
+							   :event => event.id  %></td><td></td>
+	  </tr>
+	  <tr>
+	    <td>When: <%=h event.start_at.strftime("%A, %b %d @ %I:%M") %></td><td></td>
+	  </tr>
+	  <tr><td><br/></td></tr>
+	  
+	  
+	<% end %>
+	</table>
+
+<% end %>
+
+<br />
+

@@ -1,0 +1,126 @@
+<br/>
+<<<<<<< .mine
+<% if logged_in? %>
+	<%if current_user.has_role?('admin')%>
+		<h1>Manage Users</h1>
+		<hr>
+		<table>
+		<% @organizations.each do |organization| %>
+		
+			<tr>
+				<td>Name: <%= link_to organization.name, organization %></td><td><%= link_to 'Edit',  edit_organization_path(organization)%></td>
+			</tr>
+			<tr>
+				<td>Type: <%= organization.user_type %></td><td>
+					<% if organization.is_pending %>
+						<%= link_to 'Accept Account Request', organization, :method => :put  %>
+					<%else%>
+						Account Accepted
+					<%end%></td>
+			</tr>
+			<tr>
+				<td>Category: <%= organization.category.name %></td><td><%= link_to 'Delete Account', organization, :confirm => 'Are you sure?', :method => :delete %></td>
+			</tr>
+			<tr><td><% if organization.is_active %>
+					Account Status: Active
+					<%else%>
+					Account Status: Deactivated
+					<%end%></td></tr>
+			<tr><td><br/></td></tr>
+		<% end %>
+		</table>
+	<% else %>
+	<h1>Community Directory</h1>
+	<hr>
+	
+	
+	
+	<table>
+	 <p></p>
+	<% @organizations.each do |organization| %>
+	  <tr>
+	    <td><%= link_to organization.name, organization %></td>
+	    
+	    <% if false #if is moderator%>
+	    <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+	    <td><%= link_to 'Destroy', organization, :confirm => 'Are you sure?', :method => :delete %></td>
+		<% end %>
+	  </tr>
+	<% end %>
+	</table>
+	
+	<br />
+	
+=======
+
+<%unless current_user.nil? %>
+	<%if current_user.has_role?('admin')%>
+		<h1>Manage Users</h1>
+		<hr>
+		<table>
+		<% @organizations.each do |organization| %>
+
+			<tr>
+				<td>Name: <%= link_to organization.name, organization %></td><td><%= link_to 'Edit',  edit_organization_path(organization)%></td>
+			</tr>
+			<tr>
+				<td>Type: <%= organization.user_type %></td><td>
+					<% if organization.is_pending %>
+						<%= link_to 'Accept Account Request', organization, :method => :put  %>
+					<%else%>
+						Account Accepted
+					<%end%></td>
+			</tr>
+			<tr>
+				<td>Category: <%= organization.category.name %></td><td><%= link_to 'Delete Account', organization, :confirm => 'Are you sure?', :method => :delete %></td>
+			</tr>
+			<tr><td><% if organization.is_active %>
+					Account Status: Active
+					<%else%>
+					Account Status: Deactivated
+					<%end%></td></tr>
+			<tr><td><br/></td></tr>
+		<% end %>
+		</table>
+>>>>>>> .r64
+	<% end %>
+<% else %>
+<<<<<<< .mine
+	<h1>Community Directory</h1>
+	<hr>
+	
+	
+	
+	<table>
+	 <p></p>
+	<% @organizations.each do |organization| %>
+	  <tr>
+	    <td><%= link_to organization.name, organization %></td>
+	    
+	    <% if false #if is moderator%>
+	    <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+	    <td><%= link_to 'Destroy', organization, :confirm => 'Are you sure?', :method => :delete %></td>
+		<% end %>
+	  </tr>
+=======
+	<h1>Community Directory</h1>
+
+<hr>
+
+
+
+<table>
+ <p></p>
+<% @organizations.each do |organization| %>
+  <tr>
+    <td><%= link_to organization.name, organization %></td>
+    
+    <% if false #if is moderator%>
+    <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+    <td><%= link_to 'Destroy', organization, :confirm => 'Are you sure?', :method => :delete %></td>
+>>>>>>> .r64
+	<% end %>
+	</table>
+	
+	<br />
+<% end %>

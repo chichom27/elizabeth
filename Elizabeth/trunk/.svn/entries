@@ -1,0 +1,123 @@
+10
+
+dir
+72
+https://cmu-is-projects.svn.beanstalkapp.com/team09_f09/trunk
+https://cmu-is-projects.svn.beanstalkapp.com/team09_f09
+
+
+
+2009-11-30T00:53:17.540876Z
+72
+kyeh
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+49d23bef-f3d6-4d25-9f2f-ecf136110f80
+
+test
+dir
+
+app
+dir
+
+Rakefile
+file
+
+
+
+
+2009-11-03T21:50:14.561647Z
+17f2f134da4cd31ea095d5868ca89e86
+2009-10-22T22:14:22.344766Z
+21
+kyeh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+307
+
+script
+dir
+
+config
+dir
+
+db
+dir
+
+doc
+dir
+
+lib
+dir
+
+vendor
+dir
+
+README
+file
+
+
+
+
+2009-11-03T21:50:14.591647Z
+a58e68a7599c976f071d5b9c6fa67fb3
+2009-10-22T22:14:22.344766Z
+21
+kyeh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10011
+
+public
+dir
+

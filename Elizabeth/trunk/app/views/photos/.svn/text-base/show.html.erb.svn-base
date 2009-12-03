@@ -1,0 +1,7 @@
+<p>
+	<div id="largePhoto">
+	    <%= image_tag(@photo.data.url(:large), :alt => '') %>
+	<p><%= link_to 'Back to Album', @album %></p>
+	</div>
+</p>
+

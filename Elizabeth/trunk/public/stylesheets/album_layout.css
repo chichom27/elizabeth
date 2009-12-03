@@ -1,0 +1,342 @@
+@charset "UTF-8";
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background: #999;
+}
+
+
+
+
+.oneColFixCtrHdr #container {
+	width: 780px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColFixCtrHdr #header {
+	width: 780px; 
+	height: 328px;
+	padding: 2px 2px 0px 2px;
+	margin: 0 0 0 0;
+	background: url(/images/header.png) no-repeat;
+	/* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+}
+.oneColFixCtrHdr #sitelogo {
+height:72px;
+width: 364px;
+margin: 0 0 0px 20px;
+padding: 0px 0px 210px 12px;
+	
+}
+
+.oneColFixCtrHdr #navbar {
+
+height: 46px;
+width: 756px;
+padding: 0px 0px 0px 10px;
+	
+}
+
+.oneColFixCtrHdr #userloginbox {
+width: 276px;
+height:46px;
+background: url(/images/user_login.png) no-repeat;
+padding: 0px 0 0 0;
+margin: 0 0;
+font: Helvetica;
+font-size: 10px;
+color: #FFFFFF;
+text-align: center;
+	
+	
+}
+.oneColFixCtrHdr #userloginbox input[type="text"], #userloginbox input[type="password"], #userloginbox textarea {
+	margin-top: 3px;
+	
+	font-family: Helvetica;
+	    font-size: 12px;
+	    border: solid 1px #85b1de;
+	    width: 90px;
+		height: 12px;
+	
+	
+}
+
+.oneColFixCtrHdr #userloginbox td{
+	
+text-align: right;	
+padding: 0 0;
+margin: 0 0;
+
+	
+}
+
+.oneColFixCtrHdr #userloginbox tr{
+	
+text-align: right;	
+padding: 0 0;
+margin: 0 0;
+
+	
+}
+
+
+
+.oneColFixCtrHdr #mainContent {
+	
+	padding: 0px 25px 20px 30px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: url(/images/content_body.png);
+	
+}
+
+.oneColFixCtrHdr #mainContent h1 {
+	
+	font-size:22px;
+	font: helvetica;
+	color: #036392;
+}
+
+.oneColFixCtrHdr #mainContent p {
+	
+	font-size:12px;
+	font: helvetica;
+	
+}
+
+.oneColFixCtrHdr #mainContent input[type="text"], #mainContent textarea {
+	
+	font-size:12px;
+	font: helvetica;
+	display: block;
+	border: solid 1px #000000;
+	
+}
+
+.oneColFixCtrHdr #mainContent h2 {
+	font-family:Georgia;
+	font-size:22px;
+	padding: 0 0;
+	margin: 0 0;
+
+	color: #036392;
+}
+
+.oneColFixCtrHdr #mainContent h3 {
+	
+	font-size:12px;
+	color: #036392;
+	
+	
+}
+
+.oneColFixCtrHdr #mainContent hr {
+	
+	border: 0;
+	
+	background-color: #036392;
+	height:1px;
+	width: 300px;
+	text-align: left;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.oneColFixCtrHdr #mainContent a, #mainContent v {
+	
+	text-decoration: none;
+	color: #036392;
+}
+
+.oneColFixCtrHdr #mainContent a:hover {
+	
+	color:#CCCC00;
+}
+
+.oneColFixCtrHdr #rightColumn {
+	width:211px;
+	height:300px;
+	background: #333333;
+	padding:15px 0px 0 12px;
+	float:right;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-family: helvetica;
+	
+}
+
+.oneColFixCtrHdr #rightColumn hr {
+	width:200px;
+	background-color:#FFFFFF;
+	
+}
+
+.oneColFixCtrHdr #rightColumn h3 {
+	
+	color: #FAE6B8;
+	size: 14px;
+	
+}
+
+.oneColFixCtrHdr #rightColumn tr {
+	
+	color: #FFFFFF;
+	font-size: 12px;
+	
+}
+
+.oneColFixCtrHdr #rightColumn a, v  {
+	
+	color: #CCCC00;
+	font-size: 12px;
+	
+}
+
+.oneColFixCtrHdr #rightColumn a:hover  {
+	
+	color: #036392;
+	font-size: 12px;
+	
+}
+
+.oneColFixCtrHdr #leftColumn {
+	
+	width: 740px;
+	padding: 22px 0 0 0;
+	font-size: 12px;
+	line-height:1.5em;
+	font-family: helvetica;
+	text-align: center;
+}
+
+.oneColFixCtrHdr #leftColumn a,v {
+	
+	font-family: helvetica;
+	font-size: 12px;
+
+}
+
+
+#commentBox
+{
+    font-family: Helvetica;
+    font-size: 12px;
+    background-color: #d6e5f4;
+    padding: 10px;
+	width: 300px;
+}
+
+#commentBox input[type="text"], #commentBox textarea
+{
+    font-family: Helvetica;
+	    font-size: 12px;
+	    margin-bottom: 5px;
+	    display: block;
+	    padding: 4px;
+	    border: solid 1px #85b1de;
+	    width: 300px;
+	    background-color: #EDF2F7;
+}
+
+#commentBox input[type="text"]:focus, #commentBox textarea:focus
+{
+    background-image: none;
+    background-color: #ffffff;
+    border: solid 1px #33677F;
+}
+
+.oneColFixCtrHdr #commentList {
+	width:300px;
+	padding: 10px;
+	border: solid 1px;
+	font-family: Helvetica;
+	font-size: 12px;
+	margin: 0 0 3px 0;
+	
+
+}
+
+
+
+.oneColFixCtrHdr #commentList span {
+	padding: 0 0;
+	margin: 0 0;
+	color: #036392;
+	font-weight: bold;
+
+	
+	
+	
+}
+
+.oneColFixCtrHdr #commentListDelete {
+	margin: 4px 0 0 0;
+	text-align: right;
+	
+
+}
+
+.oneColFixCtrHdr #delete a {
+	float:left;
+	text-align: right;
+	margin: 2px 0 0 245px;
+	padding: 13px 0 0px 0;
+	color:#036392;
+	
+
+}
+
+.oneColFixCtrHdr #delete a:hover {
+
+	color:#036392;
+	
+
+}
+
+
+
+
+
+.oneColFixCtrHdr #footer {
+	padding: 20px 0 0 0; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background: url(/images/footer.png) no-repeat;
+	width: 780px;
+	height: 60px;
+	font: helvetica;
+}
+.oneColFixCtrHdr #footer p {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.activeField
+{
+        background-image: none;
+        background-color: #ffffff;
+        border: solid 1px #33677F;
+}
+.idle
+{
+    border: solid 1px #85b1de;
+    background-color: #EDF2F7;   
+ 	background-repeat: repeat-x;
+    background-position: top;
+}
+
+

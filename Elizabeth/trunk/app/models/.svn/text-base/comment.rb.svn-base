@@ -1,0 +1,7 @@
+class Comment < ActiveRecord::Base
+  
+  belongs_to :pictures
+  belongs_to :event
+  
+  acts_as_authorization_object
+end

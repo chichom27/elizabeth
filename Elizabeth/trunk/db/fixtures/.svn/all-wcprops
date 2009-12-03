@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/team09_f09/!svn/ver/72/trunk/db/fixtures
+END
+users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/team09_f09/!svn/ver/71/trunk/db/fixtures/users.rb
+END
+albums.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/team09_f09/!svn/ver/66/trunk/db/fixtures/albums.rb
+END
+events.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/team09_f09/!svn/ver/72/trunk/db/fixtures/events.rb
+END
+roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/team09_f09/!svn/ver/71/trunk/db/fixtures/roles.rb
+END
+categories.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/team09_f09/!svn/ver/59/trunk/db/fixtures/categories.rb
+END
+roles_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/team09_f09/!svn/ver/71/trunk/db/fixtures/roles_users.rb
+END
+organizations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/team09_f09/!svn/ver/71/trunk/db/fixtures/organizations.rb
+END
+locations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/team09_f09/!svn/ver/71/trunk/db/fixtures/locations.rb
+END
+photos.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/team09_f09/!svn/ver/62/trunk/db/fixtures/photos.rb
+END

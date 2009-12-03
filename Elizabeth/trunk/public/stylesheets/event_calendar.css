@@ -1,0 +1,114 @@
+/*
+  Calendar theme, based on Geoffrey Grosenbach http://nubyonrails.com
+  
+  Colors: 
+    Tan: ecede2 
+    Turq: 003355
+    Cream: ffffdd
+*/
+
+.calendar {
+  background-image: url('/images/event_calendar/105_bg.gif');
+  background-repeat: repeat;
+  margin: auto;
+text-align: center;
+  
+}
+
+.calendar thead {
+  background-color: white;
+}
+
+.calendar th {
+  padding-bottom: 5px;
+}
+
+.calendar th a, .calendar th a:visited  {
+ text-decoration: none;
+padding-bottom: 5px;
+color: #006699;
+}
+
+th.monthName {
+font: Helvetica;  
+font-size: 14px;
+text-align: center;
+  
+}
+
+.dayName th {
+  font-family: Helvetica;
+	font-size: 11px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #303030;
+  color: white;
+}
+
+.otherMonth, .day, .specialDay {
+  font-size: 11px;
+  text-align: center;
+  padding: 2px 0;
+  padding-left: 1px;
+  border-right: 1px solid #d5d5d5;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.otherMonth {
+  color: #d5d5d5;
+  background-color: white;
+}
+
+.day, .specialDay {
+  background-color: #ecede2;
+}
+.specialDay {
+  color: white;
+}
+.specialDay a, .specialDay a:visited, .specialDay a:hover {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+.specialDay a:hover {
+  color: white;
+  background-color: black;
+}
+.weekendDay {
+  /* background-color: #ffffdd; */
+}
+.today{
+	background-color: #8EB9CF;
+}
+
+.beginning_of_week {
+  border-left: 1px solid #d5d5d5;
+  padding-left: 0;
+}
+
+/* Event blocks */
+.events { 
+  position: relative; 
+  border-bottom: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+}
+ 
+.event {
+  overflow: hidden;
+  text-align: left;
+  position: absolute;
+  font-size: 9px;
+  line-height: 16px;
+  
+}
+
+.event :hover {
+  background-color: #2EAC6A;
+}
+ 
+.event div { 
+  cursor: pointer;
+  padding-left: 6px; 
+  color:#ffffff; 
+  text-decoration: none;
+}

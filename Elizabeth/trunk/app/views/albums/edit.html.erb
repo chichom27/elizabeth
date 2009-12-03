@@ -1,0 +1,11 @@
+<div id="leftColumn">
+<h1>Add photos to album</h1>
+ 
+<% form_for @album, :html => { :multipart => true } do |f| %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
+  <p><%= f.submit "Update" %></p>
+<% end %>
+ 
+<%= link_to 'Show', @album %> |
+<%= link_to 'Back', albums_path %>
+</div>

@@ -1,0 +1,165 @@
+<div id="rightColumn">
+<h3>Events <%= link_to '(See All)', :controller => 'events',
+							   :action => 'index',
+	 						   :id => @organization.id %></td></h3>
+<hr>
+
+<%= render :partial => 'org_events' %>
+
+
+ </div>
+
+
+<div id="leftColumn"> 
+
+	<h2><%=h @organization.name %></h2> 
+	<h3>Organization Profile</h3>
+	<%unless current_user.nil? %>
+	<% if (current_user.has_role?('owner', @organization) or current_user.has_role?('admin') or current_user.has_role?('review')) %>
+		<% if @organization.is_pending == true %>
+			<p> <b>  <%= @organization.name%> is pending approval by admin.  </b> </p>
+		<% end %>
+		<% if @organization.is_active == false %>
+			<p> <b>This organization is no longer active.</b> </p>
+		<% end %>
+	<% if current_user.has_role? ('owner', @organization) %>
+		
+		
+		
+		<table> 
+			<tr>	
+				<td><%= link_to 'Edit Profile', edit_organization_path(@organization) %></td>
+	 			<td><%= link_to(image_tag("/images/edit_dg.gif", :border => 0), :action => 'edit', :id => @organization )  %> </td>
+			</tr>
+			<tr>
+				<td> 
+				<%= link_to 'Event Manager', :controller => 'events',
+							   :action => 'index',
+	 						   :id => @organization.id %></td>
+			</tr>
+			<tr>
+				<td> <%=link_to 'Location Manager', locations_path %></td>
+			</tr>
+		</table>
+	<% end %>
+	<% end %>
+
+
+<hr>
+
+
+
+<p> <b>Description:</b><br/> <%=h @organization.description %> </p>
+
+<% if !(@organization.email == nil) %>	
+	<% if !(@organization.email.empty? )%>
+		<p> <b>Email:</b> <%=h @organization.email %> </p>
+	<% end %>
+<% end %>
+
+<% if !(@organization.phone == nil) %>		
+	<% if !(@organization.phone.empty? )%>
+		<p> <b>Phone:</b> <%=h @organization.phone %> </p>
+	<% end %>
+<% end %>
+
+<% if !(@organization.cellphone == nil) %>	
+	<% if !(@organization.cellphone.empty? )%>
+		<p> <b>Cellphone:</b> <%=h @organization.cellphone %> </p>
+	<% end %>
+<% end %>
+
+<% if !(@organization.fax == nil) %>	
+	<% if !(@organization.fax.empty? )%>
+		<p> <b>Fax:</b> <%=h @organization.fax %> </p>
+	<% end %>
+<% end %>
+
+<% if !(@organization.website == nil) %>	
+	<% if !(@organization.website.empty? )%>
+		<p> <b>Website:</b> <%=h @organization.website %> </p>
+	<% end %>
+<% end %>
+
+<br/>
+<br/>
+<h3> <%= link_to 'Photo Gallery', @album %></h3>
+<br/>
+<br/>
+<br/>
+	
+
+<!-- <p> <b>Location:</b> <%=h @organization.location_id %> </p>
+
+<p> <b>Username:</b> <%=h @organization.username %> </p>
+
+<p> <b>Password:</b> <%=h @organization.password %> </p>
+
+<p> <b>User type:</b> <%=h @organization.user_type %> </p>
+ !--> 
+
+
+
+<hr> 
+<br class="clearfloat" />
+	<% else %>
+		<% if @organization.is_pending == true %>
+			<p> <b>  <%= @organization.name%> is pending approval by admin.  </b> </p>
+		<% else %>
+			<% if @organization.is_active == false %>
+				<p> <b>This organization is no longer active.</b> </p>
+			<% else %>
+				
+				<hr>
+				
+				<p> <b>Description:</b><br/> <%=h @organization.description %> </p>
+				
+				
+					<% if !(@organization.email == nil) %>	
+						<% if !(@organization.email.empty? )%>
+							<p> <b>Email:</b> <%=h @organization.email %> </p>
+						<% end %>
+					<% end %>
+					
+					<% if !(@organization.phone == nil) %>		
+						<% if !(@organization.phone.empty? )%>
+							<p> <b>Phone:</b> <%=h @organization.phone %> </p>
+						<% end %>
+					<% end %>
+					
+					<% if !(@organization.cellphone == nil) %>	
+						<% if !(@organization.cellphone.empty? )%>
+							<p> <b>Cellphone:</b> <%=h @organization.cellphone %> </p>
+						<% end %>
+					<% end %>
+					
+					<% if !(@organization.fax == nil) %>	
+						<% if !(@organization.fax.empty? )%>
+							<p> <b>Fax:</b> <%=h @organization.fax %> </p>
+						<% end %>
+					<% end %>
+					
+					<% if !(@organization.website == nil) %>	
+						<% if !(@organization.website.empty? )%>
+							<p> <b>Website:</b> <%=h @organization.website %> </p>
+						<% end %>
+					<% end %>
+					
+					<br/>
+					<br/>
+					<h3> <%= link_to 'Photo Gallery', @album %></h3>
+					<br/>
+					<br/>
+					<br/>
+
+			<% end %>
+		
+		
+		<% end %>
+		
+	<% end %>
+ </div>
+
+ 
+
+<%= link_to(image_tag("/images/back.png", :border => 0), '/organizations') %>

@@ -1,0 +1,54 @@
+<div id="rightColumn">
+	<br class="clearfloat" />
+<h3>Events</h3>
+<hr>
+
+<%= render :partial => 'org_events' %>
+
+ </div>
+
+
+<div id="leftColumn"> 
+	<h2><%=h @organization.name %></h2> 
+	<h3>Organization Profile</h3>
+
+<hr>
+ 
+
+<p> <b>Description:</b> <%=h @organization.description %> </p>
+
+<p> <b>Email:</b> <%=h @organization.email %> </p>
+
+<p> <b>Phone:</b> <%=h @organization.phone %> </p>
+
+<!-- <p> <b>Location:</b> <%=h @organization.location_id %> </p>
+
+<p> <b>Website:</b> <%=h @organization.website %> </p>
+
+<p> <b>Is pending:</b> <%=h @organization.is_pending %> </p>
+
+<p> <b>Cellphone:</b> <%=h @organization.cellphone %> </p>
+
+<p> <b>Fax:</b> <%=h @organization.fax %> </p>
+
+<p> <b>Username:</b> <%=h @organization.username %> </p>
+
+<p> <b>Password:</b> <%=h @organization.password %> </p>
+
+<p> <b>User type:</b> <%=h @organization.user_type %> </p>
+
+<p> <b>Is active:</b> <%=h @organization.is_active %> </p> !--> <table> <tr>
+	
+<td><%= link_to 'Edit', edit_organization_path(@organization) %></td>
+ <td><%= link_to(image_tag("/images/edit_dg.gif", :border => 0), :action => 'edit', :id => @organization )  %> </td>
+<td></td></tr></table>
+
+<h3>Photo Gallery</h3>
+
+<hr> 
+
+ </div>
+
+ 
+
+<%= link_to(image_tag("/images/back.png", :border => 0), '/organizations') %>

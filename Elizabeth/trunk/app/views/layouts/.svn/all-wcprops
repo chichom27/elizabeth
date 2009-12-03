@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/team09_f09/!svn/ver/70/trunk/app/views/layouts
+END
+categories.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/team09_f09/!svn/ver/24/trunk/app/views/layouts/categories.html.erb
+END
+comments.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/team09_f09/!svn/ver/24/trunk/app/views/layouts/comments.html.erb
+END
+homelayout.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/team09_f09/!svn/ver/70/trunk/app/views/layouts/homelayout.html.erb
+END
+organizations.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/team09_f09/!svn/ver/24/trunk/app/views/layouts/organizations.html.erb
+END
+event_layout.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/team09_f09/!svn/ver/70/trunk/app/views/layouts/event_layout.rhtml
+END
+locations.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/team09_f09/!svn/ver/24/trunk/app/views/layouts/locations.html.erb
+END
+standard.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/team09_f09/!svn/ver/70/trunk/app/views/layouts/standard.rhtml
+END
+homes.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/team09_f09/!svn/ver/69/trunk/app/views/layouts/homes.html.erb
+END
+album_layout.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/team09_f09/!svn/ver/70/trunk/app/views/layouts/album_layout.html.erb
+END
+pictures.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/team09_f09/!svn/ver/24/trunk/app/views/layouts/pictures.html.erb
+END
+orgshow_layout.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/team09_f09/!svn/ver/70/trunk/app/views/layouts/orgshow_layout.rhtml
+END
+albums.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/team09_f09/!svn/ver/62/trunk/app/views/layouts/albums.html.erb
+END
+events.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/team09_f09/!svn/ver/24/trunk/app/views/layouts/events.html.erb
+END

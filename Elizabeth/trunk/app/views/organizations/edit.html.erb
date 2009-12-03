@@ -1,0 +1,61 @@
+<br/>
+<h1>Update Organization Profile</h1>
+
+<hr>
+
+<% form_for(@organization) do |f| %>
+  <%= f.error_messages %>
+	
+	<%= f.hidden_field :username %>
+	<%= f.hidden_field :password %>
+	<%= f.hidden_field :is_active %>
+	<%= f.hidden_field :is_pending %>
+	<%= f.hidden_field :location_id %>
+	<%= f.hidden_field :user_type %>
+	
+  <p>
+    <%= f.label "Organization Name: " %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label "Category: " %>
+    <%= f.collection_select(:category_id , Category.find(:all), :id , :name) %>
+  </p>
+  
+  <p>
+    <%= f.label "Email Address: " %>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label "Website: " %>
+    <%= f.text_field :website %>
+  </p>
+  
+
+  <p>
+    <%= f.label "Phone: " %>
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+    <%= f.label "Cellphone: " %>
+    <%= f.text_field :cellphone %>
+  </p>
+  <p>
+    <%= f.label "Fax: " %>
+    <%= f.text_field :fax %>
+  </p>
+<p>
+    <%= f.label "Description: " %><br />
+    <%= f.text_area :description, :size => "40x5" %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<% if current_user.has_role? ('owner', @organization) %>
+<%= link_to 'Cancel', @organization %> 
+<% end %>
+<% if current_user.has_role? ('admin') %>
+<%= link_to 'Cancel', organizations_path %>
+<% end %>

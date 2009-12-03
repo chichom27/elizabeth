@@ -1,0 +1,35 @@
+<br/>
+
+<h1>Your Saved Locations</h1>
+<hr>
+
+ <table>
+<% @locations.each do |location| %>
+ <%if (location.org_id == 0) or (current_user.has_role? ('owner', location)) %>
+
+  <tr><td>Name:</td><td><%= link_to location.name, location %></td>
+  <td><% if current_user.has_role? ('owner', location) %>
+  	 <%= link_to 'Edit', edit_location_path(location) %>
+	 <% else %>
+	 (Public)
+	 <% end %>
+  </td></tr>
+  <tr><td>Address:</td><td><%=h location.address1 %></td>
+  <td><% if current_user.has_role? ('owner', location) %>
+  	<%= link_to 'Delete', location, :confirm => 'Are you sure?', :method => :delete %>
+	<% end %>
+	</td></tr>
+  <tr><td></td><td><%=h location.address2 %></td></tr>
+  <tr><td></td><td><%=h location.city %>, <%=h location.state %> <%=h location.zip %></td></tr>
+  <tr><td><br/></td></tr>
+    
+ <% end %>
+<% end %>
+ </table> 
+
+<br />
+<% if current_user.has_role? ('org') %>
+<%= link_to 'New location', new_location_path %>
+<% end %>
+
+

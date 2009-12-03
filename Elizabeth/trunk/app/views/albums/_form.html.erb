@@ -1,0 +1,11 @@
+<%= f.error_messages %>
+ 
+
+<div id="photos">
+  <%= render :partial => 'photo', :collection => @album.photos[0,3] %>
+</div>
+
+ 
+<%= link_to_function "Add Photo" do |page|
+  page.insert_html :bottom, :photos, :partial => 'photo', :object => Photo.new
+end %>
